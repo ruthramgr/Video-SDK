@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webvcall", "Webvcall\Webvcall.csproj", "{6EE46184-B9FD-4F55-951A-89E7F765FACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EE46184-B9FD-4F55-951A-89E7F765FACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE46184-B9FD-4F55-951A-89E7F765FACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE46184-B9FD-4F55-951A-89E7F765FACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE46184-B9FD-4F55-951A-89E7F765FACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71539632-7901-408F-AE92-1BDF43C7CF39}
+	EndGlobalSection
+EndGlobal

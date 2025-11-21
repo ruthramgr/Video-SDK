@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "One-on-One Video";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h1>Three-person Mesh Video Call</h1>
+    <video id="localVideo" autoplay muted playsinline style="width:300px; height:200px; background:black;"></video>
+    <video id="remoteVideo" autoplay playsinline style="width:300px; height:200px; background:black;"></video>
+    <video id="remoteVideo2" autoplay playsinline style="width:300px; height:200px; background:black;"></video>
+
+    <div>
+        <button id="startCall">Start Call</button>
+        <button id="endCall">End Call</button>
+        <input type="text" id="sessionIdInput" placeholder="Enter session ID" />
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+    <script src="~/js/call.js"></script>
+</body>
+</html>

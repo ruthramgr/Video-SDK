@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "One-on-One Video";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h1>One-on-One Video Call</h1>
+    <video id="localVideo" autoplay muted playsinline style="width:300px; height:200px; background:black;"></video>
+    <video id="remoteVideo" autoplay playsinline style="width:300px; height:200px; background:black;"></video>
+    <div style="margin-top:8px;">
+    <label>New Meeting Room-Id</label>
+    <input type="text" id="sessionIdInput" placeholder="Enter session ID" />
+    <button id="copyRoomBtn" title="Copy room id">Copy</button>
+    </div>
+
+    <div style="margin-top:8px;">
+        <label>Join Meeting Room-Id</label>
+        <input type="text" id="sessionIdInputPs" readonly placeholder="Enter session ID" />
+        <button id="PasteRoomBtnJoin" title="Paste room id">Paste</button>
+    </div>
+    
+    <div style="margin-top:8px;">
+        <label>Your name:</label>
+        <input type="text" id="usernameInput" placeholder="Enter your name" style="width:220px;" />
+        
+    </div>
+    <div id="peerInfo" style="margin-top:6px; font-weight:600;">
+        <span id="peerName">No peer</span>     
+    </div>
+    <div style="margin-top:8px;">
+        <button id="startCall">Start Call</button>
+        <button id="endCall">End Call</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+    <script src="~/js/call.js"></script>
+ @*    <script src="~/js/NewCall.js"></script> *@
+</body>
+</html>
+
